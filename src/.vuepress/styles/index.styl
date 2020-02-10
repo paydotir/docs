@@ -1,0 +1,92 @@
+@require './custom-blocks'
+@require './arrow'
+@require '~vuepress.rtl'
+
+
+// fonts
+@font-face
+  font-weight: 300
+  font-style: normal
+  font-family: vazir
+  src: url('/fonts/vazir/Vazir-Light-FD.woff') format("woff")
+
+@font-face
+  font-weight: 200
+  font-style: normal
+  font-family: vazir
+  src: url('/fonts/vazir/Vazir-Medium-FD.woff') format("woff")
+
+@font-face
+  font-weight: normal
+  font-style: normal
+  font-family: vazir
+  src: url('/fonts/vazir/Vazir-FD.woff') format("woff")
+
+.sidebar-heading .arrow
+  left 0 !important
+
+.arrow.right {
+  border-top: 4px solid transparent !important
+  border-left: 4px solid transparent !important
+  border-right: 6px solid #ccc !important
+}
+
+body
+  font-family vazir !important
+
+
+.el-tabs__nav
+  float right !important
+
+code, div[class*="language-"] pre, div[class*="language-"] pre[class*="language-"]
+  direction ltr !important
+
+.inner
+  display flex
+  justify-content space-between
+  width: 100%;
+  flex-direction row-reverse
+
+
+.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active,
+.el-tabs--border-card > .el-tabs__header .el-tabs__item:not(.is-disabled):hover
+  color: #3ecc97
+
+
+.custom-block.tip
+  border-color: #3ecc97
+
+.custom-block.danger
+  border-color: #fc5f5f;
+
+.sidebar-group a.sidebar-link
+  text-transform capitalize
+
+
+.sidebar-button
+  right 1rem
+.navbar .links
+  right: auto !important
+  left 1.5rem
+  padding-left: 0 !important;
+  padding-right: 1.5rem ;
+.navbar .logo
+  margin-right: 0 !important;
+  margin-left: 0.8rem !important;
+@media (max-width: 719px)
+
+  .sidebar
+    transform: translateX(100%) ;
+  .navbar {
+    padding-right: 4rem !important;
+    padding-left: 0 !important;
+  }
+  .page {
+    padding-right: 0 !important;
+  }
+
+
+.search-box .suggestions.align-right {
+  right: auto !important;
+  left: 0 !important;
+}
