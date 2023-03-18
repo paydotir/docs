@@ -39,6 +39,7 @@ HTTP/1.1 200 OK
   "mobile" : "شماره موبایل",
   "description" : "توضیحات",
   "cardNumber" : "شماره کارت",
+  "traceNumber" : "شماره پیگیری",
   "message" : "OK"
 }
 ```
